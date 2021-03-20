@@ -5,17 +5,9 @@
 #  Created by StarPlayrX on 12.14.2020
 
 #Auto Switch to the current directory
-dir=$(dirname "$0")
-cd "$dir"
-
-if [ $UID = 0 ]
-  then
-    echo
-    echo "Root permissions are vital."
-    echo "Please re-run this script with sudo."
-    echo
-    exit 1
-fi
+#This is not working on 11.2.3
+#dir=$(dirname "$0")
+#cd "$dir"
 
 #Black background
 k () {
